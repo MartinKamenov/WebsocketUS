@@ -1,0 +1,41 @@
+{
+  "name": "websocketus",
+  "version": "1.0.0",
+  "description": "Provider for websocket connections",
+  "main": "server.ts",
+  "scripts": {
+    "start": "npm run build:run",
+    "dev": "npm run build:live",
+    "build": "tsc -p .",
+    "build:run": "ts-node ./src/main.ts",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinKamenov/WebsocketUS.git"
+  },
+  "keywords": [
+    "websockets",
+    "nodejs",
+    "express",
+    "live",
+    "connection",
+    "liveconnection"
+  ],
+  "author": "Martin Kamenov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinKamenov/WebsocketUS/issues"
+  },
+  "homepage": "https://github.com/MartinKamenov/WebsocketUS#readme",
+  "dependencies": {
+    "@types/node": "^12.11.7",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
